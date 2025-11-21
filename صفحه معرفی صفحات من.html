@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمدمهدی عباسی | M.M.Abbasi @mahdiabbasi13811381</title>
+    <link rel="icon" type="image/png" sizes="32x32" style="border-radius: 50%;" href="https://s34.picofile.com/file/8488179734/Avatar.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            direction: rtl;
+        }
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            unicode-bidi: isolate;
+            text-align: justify;
+        }
+        .container {
+            width: 100%;
+            max-width: 550px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 20px;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        .header {
+            background: linear-gradient(135deg, #00A693 20%, #0065A5 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255,0.5);
+            margin: 0 auto 15px;
+            background-color: #ddd;
+            background-image: url('https://s34.picofile.com/file/8488179734/Avatar.jpg');
+            background-size: cover;
+        }
+        .title {
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: 600;
+        }
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        .section {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .section-title {
+            margin-top: 0;
+            color: #444;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .contact-label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .contact-value {
+            color: #333;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+        .link-item:hover {
+            background: #e9ecef;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .admin {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            color: #6c757d;
+            font-size: 0.7rem;
+            border-top: 1px solid #eee;
+        }
+        /* --- آیکون‌ها --- */
+        .eitaa { background-image: url('https://s34.picofile.com/file/8488168034/Eitaa.png'); }
+        .bale { background-image: url('https://s34.picofile.com/file/8488168018/Bale.png'); }
+        .rubika { background-image: url('https://s34.picofile.com/file/8488168168/Rubika.png'); }
+        .virasty { background-image: url('https://s34.picofile.com/file/8488168050/Virasty.png'); }
+        .soroush { background-image: url('https://s34.picofile.com/file/8488181234/soroushplus.png'); }
+        .gap { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300B1FF"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22.5C6.201 22.5 1.5 17.799 1.5 12S6.201 1.5 12 1.5 22.5 6.201 22.5 12 17.799 22.5 12 22.5z"/><path d="M12 7.5c-2.485 0-4.5 2.015-4.5 4.5s2.015 4.5 4.5 4.5 4.5-2.015 4.5-4.5-2.015-4.5-4.5-4.5zm0 7.5c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>'); }
+        .telewebion { background-image: url('https://s34.picofile.com/file/8488168826/Telewebion.png'); border-radius: 22%; }
+        .phone { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2328a745"><path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.558-8.907.09-.042 2.049-1.008 2.049-1.008l-3.48-6.795-1.999.971c-7.328 3.755 4.048 25.327 11.377 21.573l1.999-.971z"/></svg>'); }
+        .sms { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2317a2b8"><path d="M20 2H4c-1.105 0-2 .895-2 2v12c0 1.105.895 2 2 2h4l4 4 4-4h4c1.105 0 2-.895 2-2V4c0-1.105-.895-2-2-2zm-2 14H6V4h12v12z"/></svg>'); }
+
+        .telewebion_link {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .contact-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar"></div>
+            <h1 class="title">M.M. Abbasi</h1>
+            <p class="subtitle"></p>
+        </div>
+<!--
+        <div class="section">
+            <h2 class="section-title">تماس با ما</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-label">روابط عمومی صداوسیما</span>
+                    <span class="contact-value">۱۶۲</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-label">سامانه پیامکی</span>
+                    <span class="contact-value">۳۰۰۰۰۰۰۰</span>
+                </div>
+            </div>
+        </div>
+-->
+
+        <div class="section">
+            <h2 class="section-title">پیامرسان‌ها</h2>
+            <div class="links-grid">
+                <a href="https://ble.ir/mahdiabbasi13811381" class="link-item">
+                    <div class="icon bale"></div>
+                    <span>بله</span>
+                </a>
+                <a href="https://eitaa.com/mahdiabbasi13811381" class="link-item">
+                    <div class="icon eitaa"></div>
+                    <span>ایتا</span>
+                </a>
+                <a href="https://rubika.ir/mahdiabbasi13811381" class="link-item">
+                    <div class="icon rubika"></div>
+                    <span>روبیکا</span>
+                </a>
+                <a href="https://virasty.com/mahdiabbasi13811381" class="link-item">
+                    <div class="icon soroush"></div>
+                    <span>سروش‌پلاس</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">شبکه‌های اجتماعی</h2>
+            <div class="links-grid">
+                <a href="https://rubika.ir/mahdiabbasi13811381" class="link-item">
+                    <div class="icon rubika"></div>
+                    <span>روبیکا</span>
+                </a>
+                <a href="https://virasty.com/mahdiabbasi13811381" class="link-item">
+                    <div class="icon virasty"></div>
+                    <span>ویراستی</span>
+                </a>
+            </div>
+        
+        <div class="footer">
+            ساخته شده توسط <b>محمدمهدی عباسی</b>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
